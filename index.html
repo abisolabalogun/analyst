@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abisola Balogun · Healthcare Data Analyst</title>
+<meta name="description" content="Healthcare data analyst with 5+ years of frontline healthcare experience. Excel, SQL, Power BI and business analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10243a;--muted:#5a6b7c;--bg:#f6faf9;--card:#fff;--line:#dbe6e4;--teal:#0f8b8d;--teal-d:#0a6567;--mint:#d9f1ee;--gold:#e9a23b}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+.sec-head{margin-bottom:38px}
+.sec-head p.k{color:var(--teal-d);font-weight:700;font-size:.92rem;margin-bottom:6px}
+.sec-head h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.sec-head p.s{color:var(--muted);max-width:60ch;margin-top:10px}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(246,250,249,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;text-decoration:none}
+.links{display:flex;gap:20px;list-style:none;font-size:.9rem;font-weight:500;overflow-x:auto}
+.links a{text-decoration:none;color:var(--muted);white-space:nowrap}
+.links a:hover{color:var(--teal-d)}
+/* buttons */
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--teal);color:#fff;font-weight:600;text-decoration:none;border:2px solid var(--teal);transition:background .2s}
+.btn:hover{background:var(--teal-d);border-color:var(--teal-d)}
+.btn.ghost{background:transparent;color:var(--teal-d)}
+.btn.ghost:hover{background:var(--mint)}
+/* hero */
+.hero{padding:64px 0 76px;background:linear-gradient(160deg,#e3f5f2 0%,var(--bg) 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.pill{display:inline-block;background:var(--mint);color:var(--teal-d);font-weight:700;font-size:.85rem;padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.7rem);margin-bottom:18px}
+.hero .lead{color:var(--muted);font-size:1.08rem;max-width:56ch;margin-bottom:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin-bottom:28px}
+.tags li{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 14px;font-size:.88rem;font-weight:500}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.portrait{position:relative}
+.portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px;box-shadow:0 24px 50px -22px rgba(16,36,58,.45)}
+.stats{position:absolute;left:-18px;bottom:22px;display:flex;gap:10px}
+.stat{background:#fff;border-radius:16px;padding:10px 16px;box-shadow:0 10px 24px -12px rgba(16,36,58,.4);text-align:center}
+.stat b{display:block;font-family:'Fraunces',serif;font-size:1.5rem;color:var(--teal-d)}
+.stat span{font-size:.75rem;color:var(--muted)}
+/* about */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}
+.about p+p{margin-top:14px}
+.about p{color:#33475b}
+.mini{display:grid;gap:14px}
+.mini div{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:16px 18px}
+.mini h3{font-size:1.05rem;margin-bottom:4px}
+.mini p{font-size:.92rem;color:var(--muted)}
+/* toolbox */
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 18px;font-weight:600}
+/* services */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card .ic{font-size:1.7rem;margin-bottom:10px}
+.card h3{font-size:1.15rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+/* experience timeline */
+.tl{list-style:none;border-left:3px solid var(--mint);margin-left:8px}
+.tl li{position:relative;padding:0 0 34px 28px}
+.tl li::before{content:"";position:absolute;left:-10px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--teal);border:3px solid var(--bg)}
+.tl h3{font-size:1.2rem}
+.tl .where{font-weight:600;color:var(--teal-d);font-size:.95rem;margin:2px 0 6px}
+.tl p{color:#33475b;max-width:70ch}
+.tl .tg{margin-top:10px}
+.tl .tg span{display:inline-block;background:var(--mint);color:var(--teal-d);font-size:.78rem;font-weight:600;padding:3px 11px;border-radius:999px;margin:0 6px 6px 0}
+/* case studies */
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-align:left;font:inherit;color:inherit;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.case:hover{transform:translateY(-4px);box-shadow:0 18px 34px -20px rgba(16,36,58,.45)}
+.case .top{height:170px;background:linear-gradient(135deg,var(--teal),#17475f);display:flex;align-items:center;justify-content:center;font-size:3rem}
+.case .top img{width:100%;height:100%;object-fit:cover}
+.case .body{padding:20px 22px 24px}
+.case small{color:var(--teal-d);font-weight:700}
+.case h3{font-size:1.2rem;margin:4px 0 6px}
+.case p{color:var(--muted);font-size:.93rem}
+.case .more{display:inline-block;margin-top:12px;color:var(--teal-d);font-weight:700;font-size:.92rem}
+dialog{border:0;border-radius:22px;max-width:640px;width:calc(100% - 32px);padding:0;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(16,36,58,.6)}
+.dlg{padding:34px 32px}
+.dlg h3{font-size:1.6rem;margin:4px 0 12px}
+.dlg h4{margin:16px 0 4px;font-size:.95rem;color:var(--teal-d)}
+.dlg p,.dlg li{color:#33475b;font-size:.97rem}
+.dlg ul{padding-left:20px}
+.dlg img{border-radius:12px;margin:14px 0;border:1px solid var(--line)}
+.dlg .row{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+/* certs */
+.certs .card{padding:22px}
+/* workflow */
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;list-style:none}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;margin-bottom:12px}
+.steps h3{font-size:1.1rem;margin-bottom:4px}
+.steps p{color:var(--muted);font-size:.93rem}
+/* contact */
+.contact{background:var(--ink);color:#fff;border-radius:28px;padding:56px 36px;text-align:center}
+.contact h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px}
+.contact p{color:#b8c8d6;max-width:56ch;margin:0 auto 26px}
+.contact .cta{justify-content:center}
+.contact .btn.ghost{color:#fff;border-color:#4b6379}
+.contact .btn.ghost:hover{background:#1c3550}
+footer{padding:30px 0 40px;text-align:center;color:var(--muted);font-size:.88rem}
+@media(max-width:820px){.hero .wrap,.about{grid-template-columns:1fr}.portrait{max-width:420px}.stats{left:10px}section{padding:60px 0}.links{gap:14px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top">Abisola Balogun</a>
+  <ul class="links">
+    <li><a href="#about">About</a></li><li><a href="#toolbox">Toolbox</a></li><li><a href="#services">Services</a></li>
+    <li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="pill">Healthcare Data Analyst</span>
+    <h1>I turn healthcare data into decisions that help patients and teams.</h1>
+    <p class="lead">I have worked on the care floor and behind the desk for over five years. Now I use Excel, SQL and Power BI to find what is going wrong in the numbers and show people how to fix it.</p>
+    <ul class="tags"><li>Data analysis</li><li>Dashboards</li><li>SQL</li><li>Business analysis</li></ul>
+    <div class="cta"><a class="btn" href="#projects">View my projects</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+  </div>
+  <div class="portrait">
+    <img src="assets/abisola.jpg" alt="Portrait of Abisola Balogun" width="900" height="900">
+    <div class="stats"><div class="stat"><b>5+</b><span>Years in healthcare</span></div><div class="stat"><b>5</b><span>Projects</span></div></div>
+  </div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <div class="sec-head"><p class="k">About me</p><h2>From the ward to the dashboard</h2></div>
+  <div class="about">
+    <div>
+      <p>I am Abisola, a healthcare professional based in Cheltenham. I have worked in hospitals, care homes, live-in care, supported living and agency settings in Nigeria and the UK. In those jobs, a missed detail can affect a real person.</p>
+      <p>That is the standard I bring to data. I am retraining as a data analyst through the 10Alytics HealthTech Business Analysis programme, and I build projects that answer real questions: why patients miss appointments, why customers leave, and where fraud slips through.</p>
+      <p>I understand both sides, the people who give care and the people who need the numbers to make decisions.</p>
+    </div>
+    <div class="mini">
+      <div><h3>Frontline experience</h3><p>Over five years across hospital, residential and community care.</p></div>
+      <div><h3>Trusted with sensitive information</h3><p>Safeguarding and confidentiality are part of my daily work.</p></div>
+      <div><h3>Analyst skills, built with real projects</h3><p>Excel, SQL, Power BI and Power Query applied to health and business data.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="toolbox" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><p class="k">My toolbox</p><h2>Tools I use</h2></div>
+  <ul class="chips"><li>Microsoft Excel</li><li>Power BI</li><li>SQL</li><li>PostgreSQL</li><li>Power Query</li><li>PowerPoint</li><li>Jira</li><li>Data visualisation</li></ul>
+</div></section>
+
+<section id="services" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><p class="k">What I do</p><h2>Data and business analysis services</h2><p class="s">Clear, accurate analysis for healthcare teams and businesses that want to understand what their data is telling them.</p></div>
+  <div class="grid">
+    <div class="card"><div class="ic">📊</div><h3>Data analysis</h3><p>Cleaning, exploring and analysing data in Excel and SQL to find patterns that matter.</p></div>
+    <div class="card"><div class="ic">📈</div><h3>Dashboards and reporting</h3><p>Dashboards in Excel and Power BI that busy teams can read in a minute.</p></div>
+    <div class="card"><div class="ic">🗄️</div><h3>SQL and data modelling</h3><p>Querying and structuring data so reports are reliable and easy to repeat.</p></div>
+    <div class="card"><div class="ic">🧩</div><h3>Business intelligence</h3><p>Turning raw numbers into recommendations a manager can act on.</p></div>
+    <div class="card"><div class="ic">📝</div><h3>Requirements gathering</h3><p>Asking the right questions so the analysis answers what stakeholders really need.</p></div>
+    <div class="card"><div class="ic">🔄</div><h3>Process improvement</h3><p>Spotting where a process wastes time or loses people, and suggesting practical fixes.</p></div>
+  </div>
+</div></section>
+
+<section id="experience" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><p class="k">Experience</p><h2>Where I have worked</h2></div>
+  <ol class="tl">
+    <li><h3>Healthcare support and care roles</h3><p class="where">United Kingdom · care homes, live-in care, supported living and agency</p><p>Direct care and live-in care coordination across a range of settings, including Cedar Trust Care Homes, Right at Home Bristol, Mid-View Healthcare and agency shifts. Safe medication support, moving and handling, safeguarding and accurate record keeping.</p><div class="tg"><span>Direct care</span><span>Safeguarding</span><span>Medication</span><span>Record keeping</span></div></li>
+    <li><h3>Healthcare administration and client-facing roles</h3><p class="where">Nigeria · hospital and health insurance</p><p>Worked in hospital and health insurance settings, including LASUTH and AXA Mansard Health, supporting patients and clients and keeping administration accurate.</p><div class="tg"><span>Healthcare admin</span><span>Client service</span><span>Confidentiality</span></div></li>
+    <li><h3>Healthcare data analytics (training)</h3><p class="where">10Alytics HealthTech Business Analysis programme</p><p>Hands-on training in Excel, Pivot Tables, SQL, PostgreSQL, Power BI and Jira, with capstone and assignment projects built on healthcare datasets.</p><div class="tg"><span>Excel</span><span>SQL</span><span>Power BI</span><span>Jira</span></div></li>
+  </ol>
+</div></section>
+
+<section id="projects" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><p class="k">Projects</p><h2>Analysis that led to action</h2><p class="s">Click any card to read the full summary.</p></div>
+  <div class="cases">
+    <button class="case" data-d="noshow"><div class="top"><img src="images/no-show-dashboard.jpg" alt="No-show dashboard" onerror="this.replaceWith(document.createTextNode('🏥'))"></div><div class="body"><small>Capstone · Microsoft Excel</small><h3>Patient appointment no-show analysis</h3><p>Why patients miss appointments across clinic branches and specialties.</p><span class="more">Read more</span></div></button>
+    <button class="case" data-d="resort"><div class="top">🏨</div><div class="body"><small>Microsoft Excel</small><h3>Sunshine Resort customer analysis</h3><p>Customers from many countries and a high churn rate.</p><span class="more">Read more</span></div></button>
+    <button class="case" data-d="fraud"><div class="top">🔍</div><div class="body"><small>SQL</small><h3>Bank fraud detection analysis</h3><p>Finding why a bank's fraud alerts were missing real cases.</p><span class="more">Read more</span></div></button>
+    <button class="case" data-d="kardia"><div class="top">🛒</div><div class="body"><small>Business analysis</small><h3>Kardia Stores customer behaviour</h3><p>Which products to promote to raise satisfaction and sales.</p><span class="more">Read more</span></div></button>
+    <button class="case" data-d="immun"><div class="top">💉</div><div class="body"><small>SQL · PowerPoint</small><h3>Immunisation data presentation</h3><p>SQL query results on an Asian immunisation dataset, presented as slides.</p><span class="more">Read more</span></div></button>
+  </div>
+</div></section>
+
+<section id="certifications" class="certs" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><p class="k">Certifications</p><h2>Training and qualifications</h2></div>
+  <div class="grid">
+    <div class="card"><div class="ic">🎓</div><h3>Level 3 Diploma in Health and Social Care</h3></div>
+    <div class="card"><div class="ic">📘</div><h3>Care Certificate</h3><p>Standards 1 to 16</p></div>
+    <div class="card"><div class="ic">🛡️</div><h3>Safeguarding</h3></div>
+    <div class="card"><div class="ic">💊</div><h3>Medication Administration</h3></div>
+    <div class="card"><div class="ic">🫀</div><h3>Basic Life Support</h3></div>
+    <div class="card"><div class="ic">🤝</div><h3>PMVA</h3></div>
+    <div class="card"><div class="ic">🦺</div><h3>Moving and Handling</h3></div>
+    <div class="card"><div class="ic">📊</div><h3>HealthTech Business Analysis</h3><p>10Alytics, in progress</p></div>
+  </div>
+</div></section>
+
+<section id="process" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><p class="k">My process</p><h2>How I work on a project</h2></div>
+  <ol class="steps">
+    <li><h3>Understand</h3><p>I start with the question and who needs the answer, before touching any data.</p></li>
+    <li><h3>Clean and explore</h3><p>I check the data for errors and gaps, then look for patterns.</p></li>
+    <li><h3>Visualise</h3><p>I build charts and dashboards that make the finding obvious.</p></li>
+    <li><h3>Recommend</h3><p>I finish with clear next steps, in plain English.</p></li>
+  </ol>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap">
+  <div class="contact">
+    <h2>Let's talk about your data</h2>
+    <p>Hiring for a healthcare data or business analyst role, or have a project in mind? I would love to hear from you.</p>
+    <div class="cta"><a class="btn" href="mailto:bsawlahbalo@gmail.com">Email me</a><a class="btn ghost" href="https://github.com/abisolabalogun">GitHub</a><a class="btn ghost" href="#" id="li">LinkedIn</a></div>
+  </div>
+</div></section>
+
+<footer>© 2026 Abisola Balogun · Cheltenham, Gloucestershire, UK</footer>
+
+<dialog id="dlg"><div class="dlg" id="dbody"></div></dialog>
+
+<script>
+const D={
+noshow:{k:'Capstone Project 1 · Microsoft Excel',t:'Healthcare patient appointment no-show analysis',p:'An end-to-end healthcare analytics project examining appointment no-show patterns across clinic branches, specialties, patient demographics, previous attendance history and scheduling periods.',w:['Clinic branches and specialties','Patient demographics','Previous attendance history','Scheduling periods'],img:'images/no-show-dashboard.jpg'},
+resort:{k:'Microsoft Excel',t:'Sunshine Resort customer analysis',p:'The resort had customers coming in from around the world, including Portugal and the United Kingdom. Analysis and visualisation showed a high churn rate. The recommendations we gave helped the resort reduce churn by 10%.',w:['Customer origin and behaviour','Churn rate'],link:''},
+fraud:{k:'SQL',t:'Bank fraud detection analysis',p:'A client bank needed help identifying fraudulent transaction complaints. Analysis showed its detection algorithm needed to be improved, because it only flagged a fraud transaction after every 513 real fraud cases.',w:['Fraud complaints','Detection algorithm performance'],link:'https://1drv.ms/u/c/63673b159d616ce7/IQDR00CfeVSZTIW3YRyBrlutATFfPpbviPA4XQ2NhfTw0_8?e=jdJ5uu'},
+kardia:{k:'Business analysis',t:'Kardia Stores customer behaviour',p:'Kardia Stores, a large chain, wanted to improve customer satisfaction and increase sales. The analysis ended with recommendations on which products to promote, which led to a 15% increase in sales.',w:['Customer behaviour','Product performance'],link:'https://1drv.ms/u/c/63673b159d616ce7/IQDR00CfeVSZTIW3YRyBrlutATFfPpbviPA4XQ2NhfTw0_8?e=jdJ5uu'},
+immun:{k:'Bootcamp assignment · SQL · PowerPoint',t:'Immunisation data presentation',p:'Used SQL queries on an Asian immunisation dataset and turned the results into a PowerPoint presentation with a consistent Pan-Asia colour palette.',w:['SQL queries','Presentation design'],link:''}
+};
+const dlg=document.getElementById('dlg'),body=document.getElementById('dbody');
+document.querySelectorAll('.case').forEach(b=>b.addEventListener('click',()=>{
+  const d=D[b.dataset.d];
+  body.innerHTML=`<small style="color:var(--teal-d);font-weight:700">${d.k}</small><h3>${d.t}</h3><p>${d.p}</p>${d.img?`<img src="${d.img}" alt="${d.t}" onerror="this.remove()">`:''}<h4>What I looked at</h4><ul>${d.w.map(x=>`<li>${x}</li>`).join('')}</ul><div class="row">${d.link?`<a class="btn" href="${d.link}" target="_blank" rel="noopener">View project</a>`:''}<button class="btn ghost" onclick="dlg.close()">Close</button></div>`;
+  dlg.showModal();
+}));
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+</script>
+</body>
+</html>
